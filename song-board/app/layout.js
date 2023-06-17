@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body className={inter.className + " bg-white flex"}>
         <Menu />
-        {children}
+        <main className="flex-1">{children}</main>
         </body>
     </html>
   )
