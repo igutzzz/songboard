@@ -20,7 +20,7 @@ export default async function Song({params}) {
                 </button>
             </section>
             <div className="px-32 py-4">
-                <h1 className="font-bold text-4xl pb-2">{song.title}</h1>
+                <input type="text" placeholder="Title" value={song.title} className=" bg-white font-bold text-4xl pb-2" />
                 <h2 className="text-xl pb-4 text-slate-600">{song.description}</h2>
                 <p>{song.lyrics}</p>
             </div>
