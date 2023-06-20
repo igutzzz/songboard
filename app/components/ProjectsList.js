@@ -28,8 +28,8 @@ export default async function ProjectsList(){
             <List>
                 {songs.map((song) =>{
                     return(
-                        <Link href={"/song/"+song._id}>
-                            <ListItem key={song._id}>{song.title}</ListItem>
+                        <Link key={song._id} href={"/song/"+song._id}>
+                            <ListItem>{song.title}</ListItem>
                         </Link>
                     )
                 })}
